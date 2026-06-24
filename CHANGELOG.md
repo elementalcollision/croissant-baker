@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.2](https://github.com/MIT-LCP/croissant-baker/compare/croissant-baker-v0.3.1...croissant-baker-v0.3.2) (2026-06-24)
+
+
+### Build System
+
+* **deps:** bump actions/checkout from 6 to 7 ([261d32c](https://github.com/MIT-LCP/croissant-baker/commit/261d32c1c2a56b24b4214b122907ffaffe88dd2b))
+* **deps:** bump actions/checkout from 6 to 7 ([b5ec2fa](https://github.com/MIT-LCP/croissant-baker/commit/b5ec2fa11f34e34e3948f99f7bc437b5292e7060))
+
 ## [0.3.1](https://github.com/MIT-LCP/croissant-baker/compare/croissant-baker-v0.3.0...croissant-baker-v0.3.1) (2026-05-18)
 
 
