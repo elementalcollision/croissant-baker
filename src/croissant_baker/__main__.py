@@ -495,6 +495,11 @@ def main(
         "--count-csv-rows",
         help="Count exact row numbers for CSV files (slow for large datasets)",
     ),
+    detect_references: bool = typer.Option(
+        False,
+        "--detect-references",
+        help="Detect foreign keys between tables that share a key column (e.g. subject_id) and emit cr:references links. Conservative: links only when a parent table is identifiable by name.",
+    ),
     # Native mlcroissant RAI fields exposed directly as CLI flags.
     rai_data_collection: Optional[str] = typer.Option(
         None, "--rai-data-collection", help="How and where the data was gathered."
@@ -787,6 +792,7 @@ def main(
             usage_info=usage_info,
             field_mappings=merged_field_mappings,
             count_csv_rows=count_csv_rows,
+            detect_references=detect_references,
             includes=include,
             excludes=exclude,
             rai_fields=native_rai_fields,
